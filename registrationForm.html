@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEW SITE</title>
+    <link href="bower_components/reset-css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/test.js"></script>
+    <script src="../www/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Registration
+        </div>
+        <div class="panel-body">
+            <form id="registration-form" action="confirm.html" method="post">
+                <label for="firstName" class="control-label">Name:</label>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 registration">
+                        <input type="text" class="form-control" id="firstName" placeholder="First" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 registration">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last" />
+                    </div>
+                </div>
+                <label for="adress1" class="control-label registration">Adress:</label>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="text" class="form-control" id="adress1" placeholder="Adress line 1" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 registration">
+                        <input type="text" class="form-control" id="adress2" placeholder="Adress line 2" />
+                    </div>
+                </div>
+                <div class="row registration">
+                    <div class="col-lg-6 registration">
+                        <label for="city" class="control-label">City:</label>
+                        <input type="text" class="form-control" id="city" placeholder="Your city" />
+                    </div>
+                    <div class="col-lg-4 registration">
+                        <label for="stateRegion" class="control-label">State / Region:</label>
+                        <input type="text" class="form-control" id="stateRegion" placeholder="Your state / Region" />
+                    </div>
+                    <div class="col-lg-2 registration">
+                        <label for="zipcode" class="control-label">Zipcode:</label>
+                        <input type="text" class="form-control" id="zipcode" placeholder="Your zipcode" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 registration">
+                        <label for="email" class="control-label">Email:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Email Adress" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 registration">
+                        <label for="password" class="control-label">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                    </div>
+                    <div class="col-lg-6 registration">
+                        <label for="confirmPassword" class="control-label">Password:</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 registration">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Confirm, that you agree with rules.
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

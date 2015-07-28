@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEW SITE</title>
+    <link href="bower_components/reset-css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/test.js"></script>
+    <script src="../www/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Registration
+        </div>
+        <div class="panel-body">
+            <form id="registration-form" class="form-horizontal" action="confirm.html" method="post">
+                <div class="form-group">
+                    <label for="email" class=" col-lg-2 control-label" name="email">Email:</label>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" class=" col-lg-2 control-label">Name:</label>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class=" col-lg-2 control-label">Last Name:</label>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class=" col-lg-2 control-label">Password:</label>
+                    <div class="col-lg-6 col-md-6">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class=" col-lg-2 control-label">Confirm Password:</label>
+                    <div class="col-lg-6 col-md-6">
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmpassword" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class=" col-lg-2 control-label">Gender:</label>
+                    <div class="col-lg-6 col-md-6">
+                        <select class="form-control" id="gender" name="gender">
+                            <option value="">Chose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="countries" class="col-lg-2 control-label">Countries:</label>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-8 col-md-8" style="padding-left: 0px">
+                            <select class="form-control" id="countries" name="countries">
+                                <option disabled>Выберите страну</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4" style="padding-right: 0px">
+                            <select class="form-control" id="zipcode" name="zipcode">
+                                <option disabled>zipcode</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-lg-offset-2">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

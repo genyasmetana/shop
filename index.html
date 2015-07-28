@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEW SITE</title>
+    <link href="bower_components/reset-css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../www/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/test.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<!--HEADER-->
+<header class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-4 col-sm-5 col-xs-12 inline-margin-left header-media-position">
+                <div class="btn-group">
+                    <p class="pull-left inline-left">Language: </p>
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        English <span class="caret"></span>
+                    </button>
+                    <ul class="bg-color dropdown-menu" role="menu">
+                        <li><a href="#">Ukrainian</a></li>
+                        <li><a href="#">Russian</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <p class="pull-left inline-left">Currency: </p>
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        USD <span class="caret"></span>
+                    </button>
+                    <ul class="bg-color dropdown-menu" role="menu">
+                        <li><a href="#">UAH</a></li>
+                        <li><a href="#">RUB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-8 col-sm-7 col-xs-12">
+                <ul class="inline-right pull-right">
+                    <li><a href="account.html" target="_blank">Account</a></li>
+                    <li data-attr="about"><a href="Dialog.html">Wish List</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="registrationForm.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--HEADER END-->
+<!--NAVBAR-->
+<nav class="navbar navbar-default navigation">    <!--container-fluid navigation-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo">LEO SHOP</a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav-menu">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Other</a></li>
+                <li><a href="#">Purchase</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group inner-addon right-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <div class="cart-menu">
+                <span class="fa-stack fa-1x">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-tags fa-stack-1x"></i>
+                </span>
+                <span class="fa-stack fa-1x">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <a href="#">Cart <span class="badge">42</span></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="clearfix"></div>
+<!--NAVBAR END-->
+<!-------------------------------------CAROUSEL------------------------------------------->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" alt="First slide">
+            <img src="images/slide-1.png">
+            <!--<div class="caption-position">-->
+                <div class="carousel-caption">
+                    <h1>Aluminium Club.</h1>
+                    <p>Experience Ray-Ban</p>
+                </div>
+            <!--</div>-->
+        </div>
+        <div class="item" alt="Second slide">
+            <img src="images/slide-1.png">
+        </div>
+        <div class="item" alt="Third slide">
+            <img src="images/slide-1.png">
+        </div>
+    </div>
+    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-------------------------------------END CAROUSEL--------------------------------------->
+<!--------------------------------INFORMATION CONTENT------------------------------------->
+<div class="row">
+    <div class="container information-content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>Featured products</h1>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png" class="bg-img img-responsive">
+                        <img src="images/sale.png" class="front-img img-responsive">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="price">$388.00</span>
+                            <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                            </span>
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <img src="images/sale.png" class="front-img img-responsive">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="price">$388.00</span>
+                            <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="price">$388.00</span>
+                            <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media">
+                    <span class="thumbnail">
+                        <img src="images/info-glass.png">
+                        <p class="description">Loren ipsum is simply</p>
+                        <p> <span class="old-price">460$</span><span class="price">$388.00</span> <span class="fa-stack fa-1x pull-right">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                        </span></p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-6 col-md-offset-3 col-sm-6 col-xs-12 myCarousel-1">
+                <div id="myCarousel-1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#myCarousel-1" data-slide-to="0"></li>
+                        <li data-target="#myCarousel-1" data-slide-to="1"></li>
+                        <li data-target="#myCarousel-1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" alt="First slide">
+                            <span class="thumbnail">
+                                <img src="images/slideS-1.png">
+                            </span>
+                            <div class="carousel-caption">
+                                <h1>Aluminium Club.</h1>
+                                <p>Experience Ray-Ban</p>
+                                <a href="buttonsjs.html"><button type="button" class="btn btn-info">Chek it out</button></a>
+                            </div>
+                            <!--</div>-->
+                        </div>
+                        <div class="item" alt="Second slide">
+                            <span class="thumbnail">
+                                <img src="images/slideS-1.png">
+                            </span>
+                        </div>
+                        <div class="item" alt="Third slide">
+                            <span class="thumbnail">
+                                <img src="images/slideS-1.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-6 col-md-offset-3 col-sm-6 col-xs-12 right-pannel">
+                <h1>Newsletters signup</h1>
+                <p>lorem ipsum dollar sit amen, domon lirum ra adlip</p>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+                <div class="col-lg-19 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="text-center">
+                        <a class="btn btn-default" href="#" role="button">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------END INFORMATION CONTENT------------------------------------->
+<div class="container-fluid footer-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     <span class="fa-stack fa-3x pull-left">
+                         <i class="fa fa-circle fa-stack-2x"></i>
+                         <i class="fa fa-truck fa-stack-1x"></i>
+                     </span>
+                    <p>Free shipping on orders over $100</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <span class="fa-stack fa-3x pull-left">
+                         <i class="fa fa-circle fa-stack-2x"></i>
+                         <i class="fa fa-phone fa-stack-1x"></i>
+                    </span>
+                    <p>call us! toLl free- 409-8888-0099</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1>Facebook</h1>
+                    <p>20000 members</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i>Like</button>
+                    </div>
+                        <div class=" wrapper thumbnail pull-left">
+                            <img src="http://placehold.it/50x50/ffffff" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/000000" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/008000" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/ffffff" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/000000" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/008000" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/ffffff" class="img-responsive pull-left">
+                            <img src="http://placehold.it/50x50/000000" class="img-responsive pull-left">
+                        </div>
+                    <p>facebook social pluggin</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1>From twitter</h1>
+                    <div class="footer-wrap">
+                         <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                        <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1>Information</h1>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Sed ultrices purus non.</p>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> sodales sodales.</p>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Curabitur pretium dui vitae.</p>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Donec gravida mi in nisl</p>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> faucibus leo condimentum.</p>
+                    <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Donec et lorem suscipit.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <h1>contact us</h1>
+                    <p>Leo Store</p>
+                    <p> Leopards media</p>
+                    <p>KVM Rpad, 4590GH</p>
+                    <p>+1 489-8888-0099</p>
+                    <p>mail@email.com</p>
+                    <div class="footter-border"></div>
+                    <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-google-plus fa-stack-1x"></i>
+                    </span>
+                    <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-linkedin fa-stack-1x"></i>
+                    </span>
+                    <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-wifi fa-stack-1x"></i>
+                    </span>
+                    <span class="fa-stack fa-2x pull-left">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer-reserved">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p>© Copyright 2013 Css Author, All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-menu">
+                <ul class="inline-right pull-right">
+                    <li class="active"><a href="#">About Us</a></li>
+                    <li data-attr="about"><a href="#">Delivery & returns</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

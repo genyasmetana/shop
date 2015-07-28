@@ -1,0 +1,548 @@
+$header-color: #4cb1ca;
+$xsmall: 767px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+
+@mixin respond-to($media) {
+  @if $media == xs-screens {
+    @media only screen and (min-width: $xsmall - 500) and (max-width: $xsmall) { @content; }
+  }
+  @if $media == small-screens {
+    @media only screen and (min-width: $small) and (max-width: $medium) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+//@include respond-to(xs-screens)
+//@include respond-to(small-screens)
+//@include respond-to(medium-screens)
+//@include respond-to(wide-screens)
+.pull-right {
+  @include respond-to(small-screens) {
+    float: (left) !important;
+  }
+}
+.header {
+  .inline-right {
+    li:first-child {
+      @include respond-to(small-screens) {
+        padding-left: (5px) !important;
+        border-right: 1px solid #ffffff;
+      }
+    }
+  }
+}
+.header {
+  background-color: $header-color;
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: #ffffff;
+}
+.header {
+  .inline-right {
+    li {
+      padding: 0px 15px;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+.header {
+  .inline-right {
+    li:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+}
+.header {
+  li {
+    a {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: #ffffff;
+    }
+  }
+}
+.header {
+  ul {
+    li {
+      display: inline;
+    }
+  }
+}
+.inline-right {
+  margin-top: 14px;
+  margin-bottom: 15px;
+}
+.inline-margin-left {
+  margin-top: 14px;
+}
+.inline-margin-left {
+  p {
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+}
+.header {
+  .dropdown-menu {
+    background-color: $header-color;
+  }
+}
+.inline-left {
+  margin-right: 10px;
+}
+.header {
+  .btn-default {
+    background-color: $header-color;
+    border-color: $header-color;
+    color: #ffffff;
+  }
+}
+.inline-right {
+  li {
+    a:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+//NAVBAR----------------------------->
+
+.navbar-logo {
+  font-size: 36px;
+  font-family: "OpenSans";
+  color: #656565;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-logo {
+  a:hover {
+    text-decoration: none;
+  }
+}
+.navigation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.navbar-default {
+  background-color: #ffffff;
+  border: none;
+}
+.navbar-logo {
+  margin-right: 60px;
+}
+.navbar-toggle {
+  border-color: #656565;
+  background-color: #656565;
+}
+.navbar-default {
+  .navbar-toggle {
+    .icon-bar {
+      background-color: #ffffff;
+    }
+  }
+}
+.navbar-nav {
+  li {
+    a {
+      font-size: 14px;
+      font-family: "OpenSans";
+      color: #656565;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+.inner-addon {
+   position: relative;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.right-addon .glyphicon {
+  right: 0px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
+.fa-circle {
+  color: #7db122;
+}
+.fa-shopping-cart {
+  color: #ffffff;
+}
+.fa-tags {
+  color: #ffffff;
+}
+.cart-menu {
+  margin-top: 10px;
+  display: inline-block;
+}
+.cart-menu {
+  a {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #656565;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.cart-menu {
+  a:hover {
+    text-decoration: none;
+  }
+}
+.glyphicon {
+  height: 50%;
+}
+#myCarousel .carousel-caption {
+  text-align: left;
+  bottom: 20%;
+}
+#myCarousel .carousel-caption h1 {
+    font-size: 30px;
+    font-family: "OpenSans";
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#myCarousel .carousel-caption p {
+  font-size: 30px;
+  font-family: "OpenSans";
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#myCarousel .carousel-caption {
+  @include respond-to(xs-screens) {
+    bottom: -10px;
+  }
+}
+#myCarousel .carousel-caption h1 {
+  @include respond-to(xs-screens) {
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+}
+#myCarousel .carousel-caption p {
+  @include respond-to(xs-screens) {
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+.carousel-inner>.item>img {
+  width: 100%;
+}
+.information-content h1 {
+    font-size: 24px;
+    font-family: "OpenSans";
+    color: #635F57;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.description {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: #464148;
+}
+.media {
+  p {
+    margin: 5px 0px 0px 10px;
+  }
+}
+.old-price {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: #464148;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+.price {
+  color: #7db122;
+  font-size: 20px;
+}
+.myCarousel-1 {
+  border-top: 3px solid $header-color;
+  margin-top: -40px;
+}
+.myCarousel-1 {
+  .carousel-inner {
+    margin-top: 40px;
+  }
+}
+#myCarousel-1 .carousel-caption {
+  margin-top: 30px;
+}
+#myCarousel-1 .carousel-indicators li {
+  border: none;
+  background-color: #7db122;
+}
+#myCarousel-1 .active {
+  background-color: (#4cb1ca) !important;
+}
+#myCarousel-1 .carousel-indicators {
+  margin-bottom: -65px;
+}
+.front-img {
+  position: absolute;
+  bottom: 228px;
+  left: 13px;
+}
+.front-img {
+  @include respond-to(small-screens) {
+    position: absolute;
+    bottom: (200px) !important;
+    left: 13px;
+  }
+}
+.front-img {
+  @include respond-to(medium-screens) {
+    position: absolute;
+    bottom: (227px) !important;
+    left: 13px;
+  }
+}
+.right-pannel {
+  margin-top: 90px;
+  border-top: 3px solid $header-color;
+  border-bottom: 3px solid #cccccc;
+  padding-bottom: 30px;
+
+}
+.myCarousel-1 {
+    @include respond-to(xs-screens) { margin-top: 20px; }
+    @include respond-to(small-screens) { margin-top: 20px; }
+    @include respond-to(medium-screens) { margin-top: 20px; }
+}
+.right-pannel h1 {
+  font-size: 24px;
+  font-family: "OpenSans";
+  color: #635F57;
+  text-transform: uppercase;
+  margin-top: 25px;
+  text-align: center;
+}
+.right-pannel p {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: #635F57;
+  text-align: center;
+}
+.right-pannel .btn-default {
+  color: #ffffff;
+  background-color: #7db122;
+  border-color: #7db122;
+}
+.footer-info {
+  background-color: #4cb1ca;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+.footer-info p {
+  font-size: 21px;
+  font-family: "OpenSans";
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.footer-info .fa-circle {
+  color: #ffffff;
+}
+.fa-truck, .fa-phone {
+  color: #4cb1ca;
+}
+.footer {
+  background-color: #39a0b9;
+  padding-bottom: 30px;
+}
+.footer h1 {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.footer-wrap {
+  margin-top: 35px;
+}
+.footer p {
+    font-size: 13px;
+    font-family: "OpenSans";
+    color: #ffffff;
+}
+.footer .thumbnail {
+  border-top: 2px solid #4cb1ca;
+  border-bottom: 2px solid #4cb1ca;
+  background-color: #39a0b9;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.footer {
+  .thumbnail {
+    img {
+      margin: (5px) !important;
+    }
+  }
+}
+.footer .fa-circle {
+  color: #ffffff;
+}
+.footer .fa-twitter, .fa-google-plus, .fa-linkedin, .fa-wifi, .fa-facebook {
+  color: #39a0b9;
+}
+.footter-border {
+  border-bottom: 2px solid #4cb1ca;
+  margin-top: 13px;
+}
+.footer-reserved {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #0b4b5a;
+  color: #ffffff;
+}
+.footer-reserved p {
+  margin-top: 14px;
+}
+.pull-right {
+  @include respond-to(xs-screens) {
+    float: (left) !important;
+  }
+}
+  .footer-menu {
+    .inline-right {
+      li:first-child {
+        @include respond-to(xs-screens) {
+          padding-left: (5px) !important;
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+  }
+.footer-menu {
+  .inline-right {
+    li {
+      padding: 0px 15px;
+      border-right: 1px solid #ffffff;
+    }
+  }
+}
+.footer-menu {
+  .inline-right {
+    li:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+}
+.footer-menu {
+  ul {
+    li {
+      display: inline;
+    }
+  }
+}
+.footer-menu {
+  li {
+    a {
+      font-size: 13px;
+      font-family: "OpenSans";
+      color: #39a0b9;
+    }
+  }
+}
+
+
+// --------------------------------------------------------DIALOG------------------------------------------
+.dialog {
+  margin-bottom: 40px;
+  height: 70px;
+}
+.dialog-left {
+  border: 2px solid red;
+  border-radius: 10px;
+  position: relative;
+}
+.dialog-left:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 20px 20px 0px;
+  border-style: solid;
+  border-color: red transparent;
+  top: 30px;
+  left: 40px;
+}
+.dialog-left:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 19px 19px 0;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  bottom: -17px;
+  left: 41px;
+}
+.dialog-right {
+  border: 2px solid red;
+  border-radius: 10px;
+  position: relative;
+}
+.dialog-right:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 0px 20px 20px;
+  border-style: solid;
+  border-color: red transparent;
+  top: -20px;
+  right: 40px;
+}
+.dialog-right:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 0 19px 19px;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  bottom: 28px;
+  left: 1057px;
+}
+.modal-window {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//-----------------------------------------------REGISTRATION FORM-------------------------------
+
+.registration {
+  margin-top: 10px;
+}
+//.signup {
+//  padding: 0px 10px 10px 10px;
+//}
+//.iti-flag {
+//  background-image: url("/bower_components/intl-tel-input-master/build/img/flags.png");
+//}
